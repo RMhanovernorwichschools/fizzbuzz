@@ -44,4 +44,17 @@ Fizz
 Fizz
 Buzz
 """
-max=input('How many numbers shall we print? ')
+max=int(input('How many numbers shall we print? '))
+numbers=[n+1 for n in range(0,max)]
+
+ft=int(input("For multiples of what number shall we print 'Fizz'? "))
+bt=int(input("For multiples of what number shall we print 'Buzz'? "))
+for n in numbers:
+    if n/ft==int(n/ft) and n/bt==int(n/bt):
+        print('FizzBuzz')
+    elif n/ft==int(n/ft) and n/bt!=int(n/bt):
+        print('Fizz')
+    elif n/bt==int(n/bt) and n/ft!=int(n/ft):
+        print('Buzz')
+    else:
+        print(n)
