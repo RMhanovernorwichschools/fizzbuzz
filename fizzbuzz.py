@@ -44,3 +44,4 @@ Fizz
 Fizz
 Buzz
 """
+max=input('How many numbers shall we print? ')
